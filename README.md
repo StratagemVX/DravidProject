@@ -1,36 +1,41 @@
-# HTML5 & CSS Web Link Navigation Demonstration
+# Interactive 3D Folding Birthday Greeting Card (`DravidProject`)
 
-> A foundational academic web engineering laboratory demonstration illustrating semantic HTML5 anchor navigation, cross-page linking, and external CSS styling.
+> Minimal HTML5 and CSS3 interactive 3D-flip greeting card exercise (`index.html`, `style.css`) demonstrating CSS perspective transforms and card hover animations.
 
-[![HTML5](https://img.shields.io/badge/HTML5-Semantic-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-Styling-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![HTML5](https://img.shields.io/badge/HTML5-Card%20Layout-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-3D%20Transforms-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ---
 
 ## Executive Overview
 
-An introductory web development laboratory exercise illustrating standard HTML5 hyperlink conventions, cross-page navigation, target attributes, and hover-state styling with external CSS stylesheets.
+**`DravidProject`** is a minimal two-file static HTML/CSS greeting card (`index.html` + `style.css`) using 3D card fold styling on hover/focus and external image assets.
+
+> **Quality & CI Status (`main` vs. Open Draft PR #2 — `maintenance/repository-quality-improvements`):**
+> - **PR #2** adds `.gitignore`, static site validation (`tests/verify_site.mjs`), and `.github/workflows/quality.yml` (verified passing in CI).
 
 ---
 
-## Contributor Attribution & Profile
+## Files & Verification
+
+```text
+DravidProject/
+├── .github/workflows/quality.yml   # Node verification CI (PR #2)
+├── tests/verify_site.mjs           # HTML & local asset verification (PR #2)
+├── index.html                      # Greeting card markup
+├── style.css                       # 3D flip card styles
+└── README.md
+```
+
+```bash
+# Open index.html in a browser or verify locally (PR #2):
+node tests/verify_site.mjs
+```
+
+---
+
+## Contributor Attribution
 
 - **Author:** Chethan Kumar B S (`StratagemVX`)
 - **GitHub:** [https://github.com/StratagemVX](https://github.com/StratagemVX)
 - **Portfolio:** [https://chethan-kumar-portfolio.vercel.app/](https://chethan-kumar-portfolio.vercel.app/)
-
-## Verification and maintenance
-
-This repository's README is the starting point for understanding the project. Before proposing changes, inspect the current default branch and the dependency manifest, then verify the affected workflow locally.
-
-### Build and test commands
-
-No root `package.json` was available during this documentation pass. Use the repository's actual language-specific dependency manifest and CI configuration to select build and test commands; no unverified commands are prescribed here.
-
-### Contribution and security notes
-
-- Keep examples, screenshots, feature claims, and architecture descriptions synchronized with the implementation.
-- Never commit real credentials, private keys, production data, or local environment files. Use a placeholder-only environment example and configure secrets in the deployment platform.
-- Include reproduction steps and expected versus actual behavior when reporting a defect.
-- Record any required environment variables and external services without publishing their secret values.
-- Confirm tests and build checks on the proposed change before merging.
